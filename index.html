@@ -1,404 +1,417 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anjana Varshepally - Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0c0a09; /* stone-950 */
-            color: #e7e5e4; /* stone-200 */
-        }
-        .text-gradient {
-            background: linear-gradient(to right, #fbbf24, #f97316);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .animated-background {
-            background-color: #0c0a09;
-            background-image: radial-gradient(circle at 1% 1%, rgba(251, 191, 36, 0.1) 0%, transparent, 50%),
-                              radial-gradient(circle at 99% 99%, rgba(249, 115, 22, 0.1) 0%, transparent, 50%);
-        }
-        .typing-cursor {
-            display: inline-block;
-            width: 3px;
-            height: 1.1rem; /* Adjusted height */
-            background-color: #fbbf24; /* amber-400 */
-            animation: blink 1s infinite;
-            margin-left: 4px;
-            vertical-align: middle;
-        }
-        @keyframes blink { 50% { opacity: 0; } }
-        
-        .fade-in-up {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-        .fade-in-up.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 3px;
-            background: linear-gradient(to right, #fbbf24, #f97316);
-            margin-top: 8px;
-            border-radius: 3px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjana Varshepally - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0c0a09; /* stone-950 */
+            color: #e7e5e4; /* stone-200 */
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #fbbf24, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .animated-background {
+            background-color: #0c0a09;
+            background-image: radial-gradient(circle at 1% 1%, rgba(251, 191, 36, 0.1) 0%, transparent, 50%),
+                              radial-gradient(circle at 99% 99%, rgba(249, 115, 22, 0.1) 0%, transparent, 50%);
+        }
+        .typing-cursor {
+            display: inline-block;
+            width: 3px;
+            height: 1.1rem; /* Adjusted height */
+            background-color: #fbbf24; /* amber-400 */
+            animation: blink 1s infinite;
+            margin-left: 4px;
+            vertical-align: middle;
+        }
+        @keyframes blink { 50% { opacity: 0; } }
+        
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(to right, #fbbf24, #f97316);
+            margin-top: 8px;
+            border-radius: 3px;
+        }
+    </style>
 </head>
 <body class="animated-background">
 
-    <div class="max-w-7xl mx-auto lg:grid lg:grid-cols-12 lg:gap-16 px-4 py-16">
+    <div class="max-w-7xl mx-auto lg:grid lg:grid-cols-12 lg:gap-16 px-4 py-16">
 
-                <aside class="lg:col-span-4 lg:sticky lg:top-16 self-start mb-12 lg:mb-0 fade-in-up">
-            <div class="bg-stone-900/70 backdrop-blur-lg border border-stone-800/50 rounded-2xl p-8 flex flex-col items-center text-center">
-                <img src="image.png" alt="Anjana Varshepally" class="w-36 h-32 object-cover rounded-2xl mb-4 border-2 border-stone-700">
-                <h1 class="text-2xl font-bold text-white">Anjana Varshepally</h1>
-                <div class="mt-2 bg-stone-800 px-3 py-1 rounded-full">
-                    <p class="text-sm text-amber-400 h-5" id="typing-container">
-                        <span id="typing-text"></span><span class="typing-cursor"></span>
-                    </p>
-                </div>
-                
-                <div class="mt-8 flex items-center justify-center gap-4">
-                    <a href="https://github.com/anj1741" target="_blank" class="p-3 bg-stone-800/50 rounded-lg hover:bg-stone-700 transition-colors border border-stone-700/50" aria-label="GitHub Profile">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/anjana-varshepally-73b3a4283/" target="_blank" class="p-3 bg-stone-800/50 rounded-lg hover:bg-stone-700 transition-colors border border-stone-700/50" aria-label="LinkedIn Profile">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                    </a>
-                </div>
-
-                <hr class="w-full border-t border-stone-800/50 my-8">
-
-                <div class="w-full text-left space-y-4">
-                    <div class="flex items-center gap-4">
-                        <div class="contact-icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-400"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
-                        <div>
-                            <p class="text-xs text-stone-400">EMAIL</p>
-                            <a href="mailto:anjvarshepally@gmail.com" class="text-sm text-white hover:text-amber-300">anjvarshepally@gmail.com</a>
-                        </div>
-                    </div>
-                     <div class="flex items-center gap-4">
-                        <div class="contact-icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-400"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
-                        <div>
-                            <p class="text-xs text-stone-400">PHONE</p>
-                            <p class="text-sm text-white">9014587119</p>
-                        </div>
-                    </div>
-                </div>
+        <!-- Left Sidebar -->
+        <aside class="lg:col-span-4 lg:sticky lg:top-16 self-start mb-12 lg:mb-0 fade-in-up">
+            <div class="bg-stone-900/70 backdrop-blur-lg border border-stone-800/50 rounded-2xl p-8 flex flex-col items-center text-center">
+                <img src="image.png" alt="Anjana Varshepally" class="w-36 h-32 object-cover rounded-2xl mb-4 border-2 border-stone-700">
+                <h1 class="text-2xl font-bold text-white">Anjana Varshepally</h1>
+                <div class="mt-2 bg-stone-800 px-3 py-1 rounded-full">
+                    <p class="text-sm text-amber-400 h-5" id="typing-container">
+                        <span id="typing-text"></span><span class="typing-cursor"></span>
+                    </p>
+                </div>
                 
-                <a href="https://drive.google.com/file/d/1KIfmuVfS8O99AeMwddEJrajWDnH0FBB8/view?usp=drive_link" target="_blank" class="w-full mt-6 inline-block bg-amber-500 text-stone-900 font-bold py-3 px-8 rounded-lg hover:bg-amber-600 transition-all duration-300 shadow-lg shadow-amber-500/30 text-center">
-                    View Resume
-                </a>
-            </div>
-        </aside>
+                <div class="mt-8 flex items-center justify-center gap-4">
+                    <a href="https://github.com/AnjanaVarshepally" target="_blank" class="p-3 bg-stone-800/50 rounded-lg hover:bg-stone-700 transition-colors border border-stone-700/50" aria-label="GitHub Profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anjana-varshepally/" target="_blank" class="p-3 bg-stone-800/50 rounded-lg hover:bg-stone-700 transition-colors border border-stone-700/50" aria-label="LinkedIn Profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                </div>
 
-                <main class="lg:col-span-8">
-                        <nav class="bg-stone-900/70 backdrop-blur-lg border border-stone-800/50 rounded-2xl p-2 mb-12 hidden md:flex justify-end items-center sticky top-4 z-40">
-                <a href="#about" class="px-4 py-2 text-sm font-medium rounded-lg hover:bg-stone-700/80 transition-colors">About</a>
-                <a href="#skills" class="px-4 py-2 text-sm font-medium rounded-lg hover:bg-stone-700/80 transition-colors">Skills</a>
-                <a href="#experience" class="px-4 py-2 text-sm font-medium rounded-lg hover:bg-stone-700/80 transition-colors">Experience</a>
-                <a href="#projects" class="px-4 py-2 text-sm font-medium rounded-lg hover:bg-stone-700/80 transition-colors">Projects</a>
-                <a href="#achievements" class="px-4 py-2 text-sm font-medium rounded-lg hover:bg-stone-700/80 transition-colors">Achievements</a>
-                <a href="#contact" class="px-4 py-2 text-sm font-medium rounded-lg hover:bg-stone-700/80 transition-colors">Contact</a>
-            </nav>
+                <hr class="w-full border-t border-stone-800/50 my-8">
 
-            <div class="space-y-20">
-                                <section id="about" class="fade-in-up">
-                     <h2 class="text-3xl font-bold text-white mb-12 section-title">About Me</h2>
-                     <div class="space-y-8">
-                        <p class="text-stone-400 leading-relaxed">
-                            A final-year B.Tech CSE student at B V Raju Institute of Technology with a strong CGPA of 9.14. I’m deeply passionate about software development and problem solving, aiming to carve my path as a skilled Software Developer in the tech industry.
-                        </p>
-                        
-                        <div>
-                            <h3 class="text-xl font-bold text-white mb-6">Educational Background</h3>
-                            <div class="relative border-l-2 border-stone-700/50">
-                                <div class="mb-10 ml-8">
-                                    <span class="absolute flex items-center justify-center w-8 h-8 bg-stone-800 rounded-full -left-4 border-2 border-stone-700/50">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-400"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1.9 2 2 2h8a2 2 0 002-2v-5"/></svg>
-                                    </span>
-                                    <h4 class="font-semibold text-white">B.Tech in Computer Science & Engineering</h4>
-                                    <p class="text-sm text-stone-400">B V Raju Institute of Technology (2022 – 2026)</p>
-                                    <p class="text-sm font-medium text-amber-400 mt-1">CGPA: 9.14</p>
-                                </div>
-                                <div class="mb-10 ml-8">
-                                    <span class="absolute flex items-center justify-center w-8 h-8 bg-stone-800 rounded-full -left-4 border-2 border-stone-700/50">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-400"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
-                                    </span>
-                                    <h4 class="font-semibold text-white">Intermediate (MPC)</h4>
-                                    <p class="text-sm text-stone-400">Sri Chaitanya Junior Kalasala (2020 – 2022)</p>
-                                    <p class="text-sm font-medium text-amber-400 mt-1">Percentage: 96%</p>
-                                </div>
-                                <div class="ml-8">
-                                    <span class="absolute flex items-center justify-center w-8 h-8 bg-stone-800 rounded-full -left-4 border-2 border-stone-700/50">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-400"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
-                                    </span>
-                                    <h4 class="font-semibold text-white">CBSE 10th Grade</h4>
-                                    <p class="text-sm text-stone-400">VRS & Vignana Jyothi Residential School (2020)</p>
-                                    <p class="text-sm font-medium text-amber-400 mt-1">Percentage: 85%</p>
-                                </div>
-                            </div>
-                     </div>
-                </section>
+                <div class="w-full text-left space-y-4">
+                    <div class="flex items-center gap-4">
+                        <div class="contact-icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-400"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+                        <div>
+                            <p class="text-xs text-stone-400">EMAIL</p>
+                            <a href="mailto:anjvarshepally@gmail.com" class="text-sm text-white hover:text-amber-300">anjvarshepally@gmail.com</a>
+                        </div>
+                    </div>
+                     <div class="flex items-center gap-4">
+                        <div class="contact-icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-400"><path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+                        <div>
+                            <p class="text-xs text-stone-400">PHONE</p>
+                            <p class="text-sm text-white">9014587119</p>
+                        </div>
+                    </div>
+                </div>
 
-                                <section id="skills" class="py-10 fade-in-up">
-                    <h2 class="text-3xl font-bold text-white mb-12 section-title">Skills & Certifications</h2>
-                    
-                                        <div class="bg-stone-900/70 backdrop-blur-lg border border-stone-800/50 rounded-2xl p-8 mb-12">
-                        <h3 class="text-xl font-semibold text-white mb-6">Technical Skills</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
-                            <div>
-                                <h4 class="skill-category-title">Programming Languages</h4>
-                                <div class="flex flex-wrap gap-3 mt-3">
-                                    <span class="skill-badge">Python</span><span class="skill-badge">Java</span><span class="skill-badge">SQL</span>
-                                </div>
-                            </div>
-                            <div>
-                                <h4 class="skill-category-title">Frameworks & Libraries</h4>
-                                <div class="flex flex-wrap gap-3 mt-3">
-                                    <span class="skill-badge">Spring Boot</span><span class="skill-badge">ReactJS</span><span class="skill-badge">Node.js</span><span class="skill-badge">YOLOv8</span>
-                                </div>
-                            </div>
-                            <div>
-                                <h4 class="skill-category-title">Databases & Tools</h4>
-                                <div class="flex flex-wrap gap-3 mt-3">
-                                    <span class="skill-badge">MongoDB</span><span class="skill-badge">MySQL</span><span class="skill-badge">VS Code</span><span class="skill-badge">GitHub</span><span class="skill-badge">IntelliJ</span>
-                                </div>
-                            </div>
-                            <div>
-                                <h4 class="skill-category-title">Deployment & Web Concepts</h4>
-                                <div class="flex flex-wrap gap-3 mt-3">
-                                    <span class="skill-badge">HTML/CSS</span><span class="skill-badge">Netlify</span><span class="skill-badge">Railway</span><span class="skill-badge">Render</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </aside>
 
-                                        <div>
-                        <h3 class="text-xl font-semibold text-white mb-6">Certifications</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div class="cert-card-new">
-                                <div class="flex-grow">
-                                    <p class="font-semibold text-white">Google Ads</p>
-                                    <p class="cert-provider">Coursera</p>
-                                </div>
-                                <a href="https://drive.google.com/file/d/1-IeJKrwDDJYuOJtGbjOwyvs_vMZKVKg_/view?usp=drive_link" class="verify-link">Verify <span>&rarr;</span></a>
-                            </div>
-                            <div class="cert-card-new">
-                                <div class="flex-grow">
-                                    <p class="font-semibold text-white">Game Design</p>
-                                    <p class="cert-provider">CalArts</p>
-                                </div>
-                                <a href="https://drive.google.com/file/d/1bucHwKU7JFEb5K4jg-2Uz_7fngZ2AazA/view?usp=drive_link" class="verify-link">Verify <span>&rarr;</span></a>
-                            </div>
-                            <div class="cert-card-new">
-                                <div class="flex-grow">
-                                    <p class="font-semibold text-white">ML with Python</p>
-                                    <p class="cert-provider">Udemy</p>
-                                </div>
-                                <a href="https://drive.google.com/file/d/1sUhLsJ0fwJDJcXQ51lU9EK57mVJWKXpK/view?usp=drive_link" class="verify-link">Verify <span>&rarr;</span></a>
-                            </div>
-                             <div class="cert-card-new">
-                                <div class="flex-grow">
-                                    <p class="font-semibold text-white">Deloitte Tech Sim</p>
-                                    <p class="cert-provider">Forage</p>
-                                </div>
-                                <a href="https://drive.google.com/file/d/10AcYjDPixlb4YeTJRSHqYknGkQ56nxPE/view?usp=drive_link" class="verify-link">Verify <span>&rarr;</span></a>
-                            </div>
-                             <div class="cert-card-new">
-                                <div class="flex-grow">
-                                    <p class="font-semibold text-white">AWS Solutions Architect</p>
-                                    <p class="cert-provider">AWS</p>
-                                </div>
-                                <a href="https://drive.google.com/file/d/1rP_Ze_HOd-AVf_ukBHtAkeZSRuOgKpFi/view?usp=drive_link" class="verify-link">Verify <span>&rarr;</span></a>
-                            </div>
-                             <div class="cert-card-new">
-                                <div class="flex-grow">
-                                    <p class="font-semibold text-white">Database Programming with SQL</p>
-                                    <p class="cert-provider">Oracle</p>
-                                </div>
-                                <a href="https://drive.google.com/file/d/1k1qKC3nYsuaZzw8FdnfV8s_CWa4nCw6a/view?usp=drive_link" class="verify-link">Verify <span>&rarr;</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        <!-- Right Content -->
+        <main class="lg:col-span-8">
+            <!-- Navigation -->
+            <nav class="bg-stone-900/70 backdrop-blur-lg border border-stone-800/50 rounded-2xl p-2 mb-12 hidden md:flex justify-end items-center sticky top-4 z-40">
+                <a href="#about" class="px-4 py-2 text-sm font-medium rounded-lg hover:bg-stone-700/80 transition-colors">About</a>
+                <a href="#skills" class="px-4 py-2 text-sm font-medium rounded-lg hover:bg-stone-700/80 transition-colors">Skills</a>
+                <a href="#experience" class="px-4 py-2 text-sm font-medium rounded-lg hover:bg-stone-700/80 transition-colors">Experience</a>
+                <a href="#projects" class="px-4 py-2 text-sm font-medium rounded-lg hover:bg-stone-700/80 transition-colors">Projects</a>
+                <a href="#achievements" class="px-4 py-2 text-sm font-medium rounded-lg hover:bg-stone-700/80 transition-colors">Achievements</a>
+                <a href="#contact" class="px-4 py-2 text-sm font-medium rounded-lg hover:bg-stone-700/80 transition-colors">Contact</a>
+            </nav>
 
-                                <section id="experience" class="py-10 fade-in-up">
-                    <h2 class="text-3xl font-bold text-white mb-12 section-title">Experience</h2>
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="experience-card">
-                            <img src="routemax.png" alt="Aptpath" class="experience-img">
-                            <div class="p-6 flex flex-col flex-grow">
-                                <h3 class="experience-title">Java Developer Intern - Aptpath</h3>
-                                <time class="experience-date">Jul 2025 – Aug 2025</time>
-                                <p class="experience-desc">Architected and implemented a scalable backend for a real-time parcel tracking application using Spring Boot. Designed RESTful APIs, managed MySQL databases, and integrated third-party services like the Gemini API for enhanced functionality.</p>
-                                <div class="flex items-center gap-4 mt-auto pt-4"><a href="https://github.com/anj1741/Routegenius_final_project.git" class="project-link">Code</a><a href="https://drive.google.com/file/d/1btmn4YxXeW_Z30ZKjL6HXGtjAlKPoTCH/view?usp=sharing" class="project-link">Video</a><a href="https://routegenius.netlify.app/" class="project-link">Live Site</a></div>
-                            </div>
-                        </div>
-                        <div class="experience-card">
-                            <img src="viora.jpg" alt="MKDigitalMare" class="experience-img">
-                            <div class="p-6 flex flex-col flex-grow">
-                                <h3 class="experience-title">Frontend Intern - MKDigitalMare</h3>
-                                <time class="experience-date">Jan 2025 – Apr 2025</time>
-                                <p class="experience-desc">Developed and maintained a responsive and user-friendly e-commerce frontend. Translated complex UI/UX designs into interactive web pages using HTML, CSS, and JavaScript, ensuring a seamless user experience across all devices.</p>
-                                <div class="flex items-center gap-4 mt-auto pt-4"><a href="https://github.com/typodude/Viora_handcraftEcommerce.git" class="project-link">Code</a><a href="https://drive.google.com/file/d/1jegLLTHq-KKBxyL912Ts8gySJBHQ1bSM/view?usp=drive_link" class="project-link">Video</a><a href="https://viora-handcraft-ecommerce.vercel.app/" class="project-link">Live Site</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            <div class="space-y-20">
+                <!-- About Me Section -->
+                <section id="about" class="fade-in-up">
+                     <h2 class="text-3xl font-bold text-white mb-12 section-title">About Me</h2>
+                     <div class="space-y-8">
+                        <p class="text-stone-400 leading-relaxed">
+                            A final-year B.Tech CSE student at B V Raju Institute of Technology with a strong CGPA of 9.14. I’m deeply passionate about software development and problem solving, aiming to carve my path as a skilled Software Developer in the tech industry.
+                        </p>
+                        
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-6">Educational Background</h3>
+                            <div class="relative border-l-2 border-stone-700/50">
+                                <div class="mb-10 ml-8">
+                                    <span class="absolute flex items-center justify-center w-8 h-8 bg-stone-800 rounded-full -left-4 border-2 border-stone-700/50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-400"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1.9 2 2 2h8a2 2 0 002-2v-5"/></svg>
+                                    </span>
+                                    <h4 class="font-semibold text-white">B.Tech in Computer Science & Engineering</h4>
+                                    <p class="text-sm text-stone-400">B V Raju Institute of Technology (2022 – 2026)</p>
+                                    <p class="text-sm font-medium text-amber-400 mt-1">CGPA: 9.14</p>
+                                </div>
+                                <div class="mb-10 ml-8">
+                                    <span class="absolute flex items-center justify-center w-8 h-8 bg-stone-800 rounded-full -left-4 border-2 border-stone-700/50">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-400"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                                    </span>
+                                    <h4 class="font-semibold text-white">Intermediate (MPC)</h4>
+                                    <p class="text-sm text-stone-400">Sri Chaitanya Junior Kalasala (2020 – 2022)</p>
+                                    <p class="text-sm font-medium text-amber-400 mt-1">Percentage: 96%</p>
+                                </div>
+                                <div class="ml-8">
+                                    <span class="absolute flex items-center justify-center w-8 h-8 bg-stone-800 rounded-full -left-4 border-2 border-stone-700/50">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-400"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                                    </span>
+                                    <h4 class="font-semibold text-white">CBSE 10th Grade</h4>
+                                    <p class="text-sm text-stone-400">VRS & Vignana Jyothi Residential School (2020)</p>
+                                    <p class="text-sm font-medium text-amber-400 mt-1">Percentage: 85%</p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </section>
 
-                                <section id="projects" class="py-10 fade-in-up">
-                    <h2 class="text-3xl font-bold text-white mb-12 section-title">Projects</h2>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-                        <div class="project-card">
-                            <img src="ulcers.png" alt="Diabetic Foot Ulcer Detection" class="w-full h-48 object-cover">
-                            <div class="p-6 flex flex-col flex-grow">
-                                <h3 class="project-title-card">Diabetic Foot Ulcer Detection</h3>
-                                <p class="project-desc-card">A machine learning system to detect and classify diabetic foot ulcers from images, enhancing early diagnosis for better patient outcomes. This research was published in the ICCCNT 2024 conference.</p>
-                                <div class="flex flex-wrap gap-2 my-4"><span class="tech-tag">Machine Learning</span><span class="tech-tag">AI</span><span class="tech-tag">Python</span></div>
-                                <div class="flex items-center gap-4 mt-auto"><a href="https://github.com/AJ-Athira/Prediction-of-Diabetic-Foot-Ulcer-Detection" class="project-link">Code</a><a href="https://ieeexplore.ieee.org/document/10724621" class="project-link">Paper</a></div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="luggage.png" alt="Luggage Detection System" class="w-full h-48 object-cover">
-                            <div class="p-6 flex flex-col flex-grow">
-                                <h3 class="project-title-card">Luggage Detection System</h3>
-                                <p class="project-desc-card">Developed a real-time object detection model using YOLOv8 and OpenCV to identify and track luggage in video streams. The system provides visual bounding boxes and audible voice alerts for detected items.</p>
-                                <div class="flex flex-wrap gap-2 my-4"><span class="tech-tag">YOLOv8</span><span class="tech-tag">OpenCV</span><span class="tech-tag">Python</span></div>
-                                <div class="flex items-center gap-4 mt-auto"><a href="https://github.com/anj1741/Luggage_Tracking" class="project-link">Code</a><a href="https://drive.google.com/file/d/1Ulik8cwUh91a6RC8PBDs1rJgV4kDXC7b/view?usp=drive_link" class="project-link">Video</a></div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <img src="trivia.png" alt="Trivia Buzz" class="w-full h-48 object-cover">
-                            <div class="p-6 flex flex-col flex-grow">
-                                <h3 class="project-title-card">Trivia Buzz – Full Stack App</h3>
-                                <p class="project-desc-card">A dynamic trivia game featuring user authentication, multi-category quizzes, and a persistent leaderboard. Deployed on Netlify and Render for a seamless user experience.</p>
-                                <div class="flex flex-wrap gap-2 my-4"><span class="tech-tag">ReactJS</span><span class="tech-tag">Node.js</span><span class="tech-tag">MongoDB</span></div>
-                                <div class="flex items-center gap-4 mt-auto"><a href="https://github.com/anj1741/Trivia-Buzz.git" class="project-link">Code</a><a href="https://trivia-buz.netlify.app/" class="project-link">Live Demo</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <!-- Skills & Certifications -->
+                <section id="skills" class="py-10 fade-in-up">
+                    <h2 class="text-3xl font-bold text-white mb-12 section-title">Skills & Certifications</h2>
+                    
+                    <!-- Technical Skills -->
+                    <div class="bg-stone-900/70 backdrop-blur-lg border border-stone-800/50 rounded-2xl p-8 mb-12">
+                        <h3 class="text-xl font-semibold text-white mb-6">Technical Skills</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
+                            <div>
+                                <h4 class="skill-category-title">Programming Languages</h4>
+                                <div class="flex flex-wrap gap-3 mt-3">
+                                    <span class="skill-badge">Python</span><span class="skill-badge">Java</span><span class="skill-badge">SQL</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="skill-category-title">Frameworks & Libraries</h4>
+                                <div class="flex flex-wrap gap-3 mt-3">
+                                    <span class="skill-badge">Spring Boot</span><span class="skill-badge">ReactJS</span><span class="skill-badge">Node.js</span><span class="skill-badge">YOLOv8</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="skill-category-title">Databases & Tools</h4>
+                                <div class="flex flex-wrap gap-3 mt-3">
+                                    <span class="skill-badge">MongoDB</span><span class="skill-badge">MySQL</span><span class="skill-badge">VS Code</span><span class="skill-badge">GitHub</span><span class="skill-badge">IntelliJ</span>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="skill-category-title">Deployment & Web Concepts</h4>
+                                <div class="flex flex-wrap gap-3 mt-3">
+                                    <span class="skill-badge">HTML/CSS</span><span class="skill-badge">Netlify</span><span class="skill-badge">Railway</span><span class="skill-badge">Render</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                                <section id="achievements" class="py-10 fade-in-up">
-                    <h2 class="text-3xl font-bold text-white mb-12 section-title">Achievements & Activities</h2>
-                    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-                        <div class="achievement-card">
-                            <div class="achievement-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
-                            <h3 class="achievement-title">Published Paper</h3>
-                            <p class="achievement-desc">Co-authored a paper for the 15th ICCCNT 2024 Conference on Diabetic Foot Ulcer detection.</p>
-                        </div>
-                        <div class="achievement-card">
-                            <div class="achievement-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
-                            <h3 class="achievement-title">Smart India Hackathon 2024</h3>
-                            <p class="achievement-desc">Shortlisted as one of the top college teams for innovative problem-solving.</p>
-                        </div>
-                        <div class="achievement-card">
-                            <div class="achievement-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87"></path><path d="M16 3.13a4 4 0 010 7.75"></path></svg></div>
-                            <h3 class="achievement-title">Club Leadership</h3>
-                            <p class="achievement-desc">Served as Event Manager at the Enlightening Club and an active member of the Microsoft Learn Student Ambassador Club.</p>
-                        </div>
-                    </div>
-                </section>
+                    <!-- Certifications -->
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-6">Certifications</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="cert-card-new">
+                                <div class="flex-grow">
+                                    <p class="font-semibold text-white">Google Ads</p>
+                                    <p class="cert-provider">Coursera</p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1-IeJKrwDDJYuOJtGbjOwyvs_vMZKVKg_/view?usp=drive_link" class="verify-link">Verify <span>&rarr;</span></a>
+                            </div>
+                            <div class="cert-card-new">
+                                <div class="flex-grow">
+                                    <p class="font-semibold text-white">Game Design</p>
+                                    <p class="cert-provider">CalArts</p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1bucHwKU7JFEb5K4jg-2Uz_7fngZ2AazA/view?usp=drive_link" class="verify-link">Verify <span>&rarr;</span></a>
+                            </div>
+                            <div class="cert-card-new">
+                                <div class="flex-grow">
+                                    <p class="font-semibold text-white">ML with Python</p>
+                                    <p class="cert-provider">Udemy</p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1sUhLsJ0fwJDJcXQ51lU9EK57mVJWKXpK/view?usp=drive_link" class="verify-link">Verify <span>&rarr;</span></a>
+                            </div>
+                             <div class="cert-card-new">
+                                <div class="flex-grow">
+                                    <p class="font-semibold text-white">Deloitte Tech Sim</p>
+                                    <p class="cert-provider">Forage</p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/10AcYjDPixlb4YeTJRSHqYknGkQ56nxPE/view?usp=drive_link" class="verify-link">Verify <span>&rarr;</span></a>
+                            </div>
+                             <div class="cert-card-new">
+                                <div class="flex-grow">
+                                    <p class="font-semibold text-white">AWS Solutions Architect</p>
+                                    <p class="cert-provider">AWS</p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1rP_Ze_HOd-AVf_ukBHtAkeZSRuOgKpFi/view?usp=drive_link" class="verify-link">Verify <span>&rarr;</span></a>
+                            </div>
+                             <div class="cert-card-new">
+                                <div class="flex-grow">
+                                    <p class="font-semibold text-white">Database Programming with SQL</p>
+                                    <p class="cert-provider">Oracle</p>
+                                </div>
+                                <a href="https://drive.google.com/file/d/1k1qKC3nYsuaZzw8FdnfV8s_CWa4nCw6a/view?usp=drive_link" class="verify-link">Verify <span>&rarr;</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                                <section id="contact" class="py-10 fade-in-up">
-                    <h2 class="text-3xl font-bold text-white mb-12 section-title">Get In Touch</h2>
-                     <div class="text-center bg-stone-900/70 backdrop-blur-lg border border-stone-800/50 rounded-2xl p-12">
-                         <p class="text-stone-400 leading-relaxed max-w-xl mx-auto mb-8">
-                            I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out and I'll get back to you as soon as possible.
-                        </p>
-                        <a href="mailto:anjvarshepally@gmail.com?subject=Message%20from%20Portfolio" 
-                           class="inline-block bg-amber-500 text-stone-900 font-bold py-3 px-8 rounded-lg hover:bg-amber-600 transition-all duration-300 shadow-lg shadow-amber-500/30 text-lg">
-                           Say Hello
-                        </a>
-                    </div>
-                </section>
-            </div>
-        </main>
+                <!-- Experience -->
+                <section id="experience" class="py-10 fade-in-up">
+                    <h2 class="text-3xl font-bold text-white mb-12 section-title">Experience</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="experience-card">
+                            <img src="routemax.png" alt="Aptpath" class="experience-img">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="experience-title">Java Developer Intern - Aptpath</h3>
+                                <time class="experience-date">Jul 2025 – Aug 2025</time>
+                                <p class="experience-desc">Architected and implemented a scalable backend for a real-time parcel tracking application using Spring Boot. Designed RESTful APIs, managed MySQL databases, and integrated third-party services like the Gemini API for enhanced functionality.</p>
+                                <div class="flex items-center gap-4 mt-auto pt-4"><a href="https://github.com/anj1741/Routegenius_final_project.git" class="project-link">Code</a><a href="https://drive.google.com/file/d/1btmn4YxXeW_Z30ZKjL6HXGtjAlKPoTCH/view?usp=sharing" class="project-link">Video</a><a href="https://routegenius.netlify.app/" class="project-link">Live Site</a></div>
+                            </div>
+                        </div>
+                        <div class="experience-card">
+                            <img src="viora.jpg" alt="MKDigitalMare" class="experience-img">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="experience-title">Frontend Intern - MKDigitalMare</h3>
+                                <time class="experience-date">Jan 2025 – Apr 2025</time>
+                                <p class="experience-desc">Developed and maintained a responsive and user-friendly e-commerce frontend. Translated complex UI/UX designs into interactive web pages using HTML, CSS, and JavaScript, ensuring a seamless user experience across all devices.</p>
+                                <div class="flex items-center gap-4 mt-auto pt-4"><a href="https://github.com/typodude/Viora_handcraftEcommerce.git" class="project-link">Code</a><a href="https://drive.google.com/file/d/1jegLLTHq-KKBxyL912Ts8gySJBHQ1bSM/view?usp=drive_link" class="project-link">Video</a><a href="https://viora-handcraft-ecommerce.vercel.app/" class="project-link">Live Site</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-    </div>
+                <!-- Projects -->
+                <section id="projects" class="py-10 fade-in-up">
+                    <h2 class="text-3xl font-bold text-white mb-12 section-title">Projects</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                        <div class="project-card">
+                            <img src="ulcers.png" alt="Diabetic Foot Ulcer Detection" class="w-full h-48 object-cover">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="project-title-card">Diabetic Foot Ulcer Detection</h3>
+                                <p class="project-desc-card">A machine learning system to detect and classify diabetic foot ulcers from images, enhancing early diagnosis for better patient outcomes. This research was published in the ICCCNT 2024 conference.</p>
+                                <div class="flex flex-wrap gap-2 my-4"><span class="tech-tag">Machine Learning</span><span class="tech-tag">AI</span><span class="tech-tag">Python</span></div>
+                                <div class="flex items-center gap-4 mt-auto"><a href="https://github.com/AJ-Athira/Prediction-of-Diabetic-Foot-Ulcer-Detection" class="project-link">Code</a><a href="https://ieeexplore.ieee.org/document/10724621" class="project-link">Paper</a></div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="luggage.png" alt="Luggage Detection System" class="w-full h-48 object-cover">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="project-title-card">Luggage Detection System</h3>
+                                <p class="project-desc-card">Developed a real-time object detection model using YOLOv8 and OpenCV to identify and track luggage in video streams. The system provides visual bounding boxes and audible voice alerts for detected items.</p>
+                                <div class="flex flex-wrap gap-2 my-4"><span class="tech-tag">YOLOv8</span><span class="tech-tag">OpenCV</span><span class="tech-tag">Python</span></div>
+                                <div class="flex items-center gap-4 mt-auto"><a href="https://github.com/anj1741/Luggage_Tracking" class="project-link">Code</a><a href="https://drive.google.com/file/d/1Ulik8cwUh91a6RC8PBDs1rJgV4kDXC7b/view?usp=drive_link" class="project-link">Video</a></div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="trivia.png" alt="Trivia Buzz" class="w-full h-48 object-cover">
+                            <div class="p-6 flex flex-col flex-grow">
+                                <h3 class="project-title-card">Trivia Buzz – Full Stack App</h3>
+                                <p class="project-desc-card">A dynamic trivia game featuring user authentication, multi-category quizzes, and a persistent leaderboard. Deployed on Netlify and Render for a seamless user experience.</p>
+                                <div class="flex flex-wrap gap-2 my-4"><span class="tech-tag">ReactJS</span><span class="tech-tag">Node.js</span><span class="tech-tag">MongoDB</span></div>
+                                <div class="flex items-center gap-4 mt-auto"><a href="https://github.com/anj1741/Trivia-Buzz.git" class="project-link">Code</a><a href="https://trivia-buz.netlify.app/" class="project-link">Live Demo</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-    <footer class="py-8 border-t border-stone-800/50">
-        <div class="container mx-auto px-4 text-center text-stone-500 text-sm">
-            <p>&copy; 2025 Anjana Varshepally. All Rights Reserved.</p>
-        </div>
-    </footer>
+                <!-- Achievements & Activities -->
+                <section id="achievements" class="py-10 fade-in-up">
+                    <h2 class="text-3xl font-bold text-white mb-12 section-title">Achievements & Activities</h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                        <div class="achievement-card">
+                            <div class="achievement-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></div>
+                            <h3 class="achievement-title">Published Paper</h3>
+                            <p class="achievement-desc">Co-authored a paper for the 15th ICCCNT 2024 Conference on Diabetic Foot Ulcer detection.</p>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+                            <h3 class="achievement-title">Smart India Hackathon 2024</h3>
+                            <p class="achievement-desc">Shortlisted as one of the top college teams for innovative problem-solving.</p>
+                        </div>
+                        <div class="achievement-card">
+                            <div class="achievement-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 00-3-3.87"></path><path d="M16 3.13a4 4 0 010 7.75"></path></svg></div>
+                            <h3 class="achievement-title">Club Leadership</h3>
+                            <p class="achievement-desc">Served as Event Manager at the Enlightening Club and an active member of the Microsoft Learn Student Ambassador Club.</p>
+                        </div>
+                    </div>
+                </section>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-            });
-        });
+                <!-- Contact -->
+                <section id="contact" class="py-10 fade-in-up">
+                    <h2 class="text-3xl font-bold text-white mb-12 section-title">Get In Touch</h2>
+                     <div class="text-center bg-stone-900/70 backdrop-blur-lg border border-stone-800/50 rounded-2xl p-12">
+                         <p class="text-stone-400 leading-relaxed max-w-xl mx-auto mb-8">
+                            I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out and I'll get back to you as soon as possible.
+                        </p>
+                        <a href="mailto:anjvarshepally@gmail.com?subject=Message%20from%20Portfolio" 
+                           class="inline-block bg-amber-500 text-stone-900 font-bold py-3 px-8 rounded-lg hover:bg-amber-600 transition-all duration-300 shadow-lg shadow-amber-500/30 text-lg">
+                           Say Hello
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
 
-        const typingTextElement = document.getElementById('typing-text');
-        const textToType = "Aspiring Software Developer";
-        let i = 0;
-        function typeWriter() {
-            if (i < textToType.length) {
-                typingTextElement.innerHTML += textToType.charAt(i);
-                i++;
-                setTimeout(typeWriter, 100);
-            }
-        }
+    </div>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('is-visible');
-                }
-            });
-        }, { threshold: 0.1 });
+    <footer class="py-8 border-t border-stone-800/50">
+        <div class="container mx-auto px-4 text-center text-stone-500 text-sm">
+            <p>&copy; 2025 Anjana Varshepally. All Rights Reserved.</p>
+        </div>
+    </footer>
 
-        document.addEventListener('DOMContentLoaded', (event) => { 
-            typeWriter(); 
-            document.querySelectorAll('.fade-in-up').forEach(element => { observer.observe(element); });
-            
-            const style = document.createElement('style');
-            style.innerHTML = `
-                .contact-icon-box { flex-shrink: 0; width: 3rem; height: 3rem; background-color: #1c1917; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; border: 1px solid #292524; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); }
-                .skill-badge { background-color: #292524; color: #a8a29e; padding: 0.5rem 1rem; border-radius: 0.5rem; font-size: 0.875rem; font-weight: 500; border: 1px solid #44403c; transition: all 0.2s; }
-                .skill-badge:hover { background-color: #44403c; color: #e7e5e4; }
-                .skill-category-title { font-weight: 600; color: #e7e5e4; border-left: 3px solid #fbbf24; padding-left: 0.75rem; }
-                .cert-card-new { display: flex; align-items: center; gap: 1rem; background-color: #1c1917; border: 1px solid #292524; padding: 1.25rem; border-radius: 0.75rem; transition: all 0.3s ease; }
-                .cert-card-new:hover { border-color: #44403c; transform: translateY(-5px); background-color: #292524; }
-                .cert-provider { color: #78716c; font-size: 0.875rem;}
-                .verify-link { flex-shrink: 0; color: #fcd34d; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: all 0.2s; }
-                .verify-link:hover { color: #fbbf24; }
-                .verify-link span { transition: transform 0.3s ease; display: inline-block; }
-                .verify-link:hover span { transform: translateX(4px); }
-                .experience-card { background-color: #1c1917; border: 1px solid #292524; border-radius: 0.75rem; overflow: hidden; display: flex; flex-direction: column; transition: all 0.3s ease; }
-                .experience-card:hover { border-color: #44403c; transform: translateY(-5px); }
-                .experience-img { width: 100%; height: 12rem; object-fit: cover; }
-                .experience-title { font-size: 1.25rem; font-weight: 600; color: #e7e5e4; }
-                .experience-date { font-size: 0.875rem; color: #a8a29e; margin-top: 0.25rem; margin-bottom: 0.75rem; }
-                .experience-desc { color: #a8a29e; flex-grow: 1;}
-                .project-card { background-color: #1c1917; border: 1px solid #292524; border-radius: 0.75rem; display: flex; flex-direction: column; transition: all 0.3s ease; overflow: hidden;}
-                .project-card:hover { border-color: #44403c; transform: translateY(-5px); }
-                .project-title-card { font-size: 1.125rem; font-weight: 600; color: #e7e5e4; }
-                .project-desc-card { color: #a8a29e; flex-grow: 1; margin-top: 0.5rem; font-size: 0.875rem; }
-                .tech-tag { background-color: #44403c; color: #d6d3d1; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; }
-                .project-link { color: #fcd34d; font-weight: 600; text-decoration: none; transition: color 0.3s; }
-                .project-link:hover { color: #fde68a; }
-                .achievement-card { background-color: #1c1917; border: 1px solid #292524; border-radius: 0.75rem; padding: 1.5rem; text-align: center; }
-                .achievement-icon { width: 3rem; height: 3rem; background-color: #292524; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: #fbbf24; }
-                .achievement-title { font-size: 1.125rem; font-weight: 600; color: #e7e5e4; margin-bottom: 0.5rem; }
-                .achievement-desc { font-size: 0.875rem; color: #a8a29e; }
-                .form-input { width: 100%; background-color: #1c1917; border: 1px solid #44403c; border-radius: 0.5rem; padding: 0.75rem 1rem; color: #e7e5e4; transition: all 0.3s; }
-                .form-input:focus { outline: none; border-color: #fbbf24; box-shadow: 0 0 0 2px #fbbf2440; }
-            `;
-            document.head.appendChild(style);
-        });
-    </script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        const typingTextElement = document.getElementById('typing-text');
+        const textToType = "Aspiring Software Developer";
+        let i = 0;
+        function typeWriter() {
+            if (i < textToType.length) {
+                typingTextElement.innerHTML += textToType.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.addEventListener('DOMContentLoaded', (event) => { 
+            typeWriter(); 
+            document.querySelectorAll('.fade-in-up').forEach(element => { observer.observe(element); });
+            
+            const style = document.createElement('style');
+            style.innerHTML = `
+                .contact-icon-box { flex-shrink: 0; width: 3rem; height: 3rem; background-color: #1c1917; border-radius: 0.75rem; display: flex; align-items: center; justify-content: center; border: 1px solid #292524; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1); }
+                .skill-badge { background-color: #292524; color: #a8a29e; padding: 0.5rem 1rem; border-radius: 0.5rem; font-size: 0.875rem; font-weight: 500; border: 1px solid #44403c; transition: all 0.2s; }
+                .skill-badge:hover { background-color: #44403c; color: #e7e5e4; }
+                .skill-category-title { font-weight: 600; color: #e7e5e4; border-left: 3px solid #fbbf24; padding-left: 0.75rem; }
+                .cert-card-new { display: flex; align-items: center; gap: 1rem; background-color: #1c1917; border: 1px solid #292524; padding: 1.25rem; border-radius: 0.75rem; transition: all 0.3s ease; }
+                .cert-card-new:hover { border-color: #44403c; transform: translateY(-5px); background-color: #292524; }
+                .cert-provider { color: #78716c; font-size: 0.875rem;}
+                .verify-link { flex-shrink: 0; color: #fcd34d; font-size: 0.875rem; font-weight: 600; text-decoration: none; transition: all 0.2s; }
+                .verify-link:hover { color: #fbbf24; }
+                .verify-link span { transition: transform 0.3s ease; display: inline-block; }
+                .verify-link:hover span { transform: translateX(4px); }
+                .experience-card { background-color: #1c1917; border: 1px solid #292524; border-radius: 0.75rem; overflow: hidden; display: flex; flex-direction: column; transition: all 0.3s ease; }
+                .experience-card:hover { border-color: #44403c; transform: translateY(-5px); }
+                .experience-img { width: 100%; height: 12rem; object-fit: cover; }
+                .experience-title { font-size: 1.25rem; font-weight: 600; color: #e7e5e4; }
+                .experience-date { font-size: 0.875rem; color: #a8a29e; margin-top: 0.25rem; margin-bottom: 0.75rem; }
+                .experience-desc { color: #a8a29e; flex-grow: 1;}
+                .project-card { background-color: #1c1917; border: 1px solid #292524; border-radius: 0.75rem; display: flex; flex-direction: column; transition: all 0.3s ease; overflow: hidden;}
+                .project-card:hover { border-color: #44403c; transform: translateY(-5px); }
+                .project-title-card { font-size: 1.125rem; font-weight: 600; color: #e7e5e4; }
+                .project-desc-card { color: #a8a29e; flex-grow: 1; margin-top: 0.5rem; font-size: 0.875rem; }
+                .tech-tag { background-color: #44403c; color: #d6d3d1; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; }
+                .project-link { color: #fcd34d; font-weight: 600; text-decoration: none; transition: color 0.3s; }
+                .project-link:hover { color: #fde68a; }
+                .achievement-card { background-color: #1c1917; border: 1px solid #292524; border-radius: 0.75rem; padding: 1.5rem; text-align: center; }
+                .achievement-icon { width: 3rem; height: 3rem; background-color: #292524; border-radius: 0.5rem; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: #fbbf24; }
+                .achievement-title { font-size: 1.125rem; font-weight: 600; color: #e7e5e4; margin-bottom: 0.5rem; }
+                .achievement-desc { font-size: 0.875rem; color: #a8a29e; }
+                .form-input { width: 100%; background-color: #1c1917; border: 1px solid #44403c; border-radius: 0.5rem; padding: 0.75rem 1rem; color: #e7e5e4; transition: all 0.3s; }
+                .form-input:focus { outline: none; border-color: #fbbf24; box-shadow: 0 0 0 2px #fbbf2440; }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
 </body>
 </html>
+
+
+
+
